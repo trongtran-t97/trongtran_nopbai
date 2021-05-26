@@ -1,0 +1,716 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Squada One', cursive;
+}
+.wrapper{
+/*	background: yellow;*/
+	min-height: 100vh;
+}
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+/*	background: blue;*/
+	width: 100%;
+	height: 125px;
+	transition: 0.6s;
+	z-index: 1000;
+}
+.container{
+	width: 100%;
+	padding-left: 8%;
+	padding-right: 8%;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.navbar{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header .logo{
+/*	position: relative;*/
+	transition: 0.6s;
+	width: 150px;
+	cursor: pointer;
+	margin: 30px 0;
+}
+.menu-icon{
+	width: 25px;
+	cursor: pointer;
+	display: none;
+}
+nav{
+/*	position: relative;*/
+	flex: 1;
+	text-align: right;	
+}
+nav ul li{
+/*	position: relative;*/
+	list-style: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+nav ul li a{
+/*	position: relative;*/
+	text-decoration: none;
+	color: rgba(0,0,0,1.00);
+	font-size: 25px;
+}
+nav ul li a:hover{
+	color: rgba(252,0,4,1.00);
+}
+.main{
+	width: 100%;
+	margin-top: 60px;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 30px 0;
+}
+.col-1{
+	flex-basis: 40%;
+	position: relative;
+	margin-left: 50px;
+}
+.col-1 h2{
+	font-size: 54px;
+}
+.col-1 p{
+	margin-top: 10px;
+	margin-bottom: 50px;
+	font-size: 17px;
+	color: rgba(104,104,104,1.00);
+	font-weight: 100px;
+}
+.col-1{
+	margin: 50px 0;
+}
+
+button{
+	width: 140px;
+	border: 0;
+	padding: 15px 10px;
+	outline: none;
+	color: white;
+	background: linear-gradient(to right, red, black);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: width 0.5s;
+	font-size: 20px;
+}
+button:hover {
+	width: 180px;
+}
+.col-1::after{
+	content: '';
+	width: 10px;
+	height: 57%;
+	background: linear-gradient(red, black);
+	position: absolute;
+	left: -40px;
+	top: 8px;
+}
+.col-2{
+	position: relative;
+	flex-basis: 60%;
+	display: flex;
+	align-items: center;
+}
+.col-2 .avengers{
+	width: 90%;
+	transition: transform 0.5s;
+}
+.avengers:hover{
+	transform: translateX(50px);
+}
+.color-box{
+	position:absolute;
+	right: 0;
+	top: 0;
+	background: linear-gradient(red, black);
+	border-radius: 20px 0 0 20px;
+	height: 100%;
+	width: 80%;
+	z-index: -1;
+	transform: translateX(150px);
+}
+.social-links img{
+	height: 20px;
+	margin: 15px;
+	cursor: pointer;
+	padding-bottom: 5px;
+}
+.social-links{
+	text-align: center;
+}
+
+/*-------characters----------*/
+.character-row{
+	height: 88%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 200px 0;
+}
+.col-text{
+	flex-basis: 40%;
+	position: relative;
+	margin-left: 50px;
+}
+.col-text h2{
+	font-size: 54px;
+}
+.col-text p{
+	margin-top: 10px;
+	margin-bottom: 50px;
+	font-size: 17px;
+	color: rgba(104,104,104,1.00);
+	font-weight: 100px;
+}
+.col-text{
+	margin: 50px 0;
+}
+
+.col-text button{
+	width: 140px;
+	border: 0;
+	padding: 15px 10px;
+	outline: none;
+	color: white;
+	background: linear-gradient(to right, red, black);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: width 0.5s;
+	font-size: 20px;
+}
+.col-text button:hover {
+	width: 180px;
+}
+.col-text::after{
+	content: '';
+	width: 10px;
+	height: 57%;
+	background: linear-gradient(red, black);
+	position: absolute;
+	left: -40px;
+	top: 8px;
+}
+.col-card{
+	flex-basis: 45%;
+}
+.card{
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 55px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 15px 15px;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	transition: transform 0.5s;
+}
+.card-1{
+	background-image: url("../img/002irm_ons_crd_03.jpg");
+}
+.card-2{
+	background-image: url("../img/003cap_ons_crd_03.jpg");
+}
+.card-3{
+	background-image: url("../img/004tho_ons_crd_03.jpg");
+}
+.card-4{
+	background-image: url(../img/006hbb_ons_crd_03.jpg);
+}
+.card h3{
+	font-size: 30px;
+	color: white;
+	text-shadow: 0 0 5px #999;
+}
+.card p{
+	font-size: 12px;
+	color: white;
+	text-shadow: 0 0 5px #999;
+}
+.card:hover{
+	color: red;
+	transform: translateY(-10px);
+}
+.character-color-box img{
+	position:fixed;
+	top: 150px;
+	right: 100px;
+	width: 700px;
+	z-index: -1;
+}
+/*-------comics----------*/
+
+.comics-row{
+	height: 88%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 200px 0;
+}
+.comics-col-text{
+	flex-basis: 40%;
+	position: relative;
+	margin-left: 50px;
+}
+.comics-col-text h2{
+	font-size: 54px;
+}
+.comics-col-text p{
+	margin-top: 10px;
+	margin-bottom: 50px;
+	font-size: 17px;
+	color: rgba(104,104,104,1.00);
+	font-weight: 100px;
+}
+.comics-col-text{
+	margin: 50px 0;
+}
+
+.comics-col-text button{
+	width: 140px;
+	border: 0;
+	padding: 15px 10px;
+	outline: none;
+	color: white;
+	background: linear-gradient(to right, red, black);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: width 0.5s;
+	font-size: 20px;
+}
+.comics-col-text button:hover {
+	width: 180px;
+}
+.comics-col-text::after{
+	content: '';
+	width: 10px;
+	height: 57%;
+	background: linear-gradient(red, black);
+	position: absolute;
+	left: -40px;
+	top: 8px;
+}
+.comics-col-card{
+	flex-basis: 45%;
+}
+.comics-card{
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 55px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 15px 15px;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+.comics-card-1{
+	background-image: url("../img/captain america.jpg");
+}
+.comics-card-2{
+	background-image: url("../img/deadpool kills the marvel.jpg");
+}
+.comics-card-3{
+	background-image: url("../img/eternals.jpg");
+}
+.comics-card-4{
+	background-image: url("../img/fantastic four.jpg");
+}
+.comics-card:hover{
+	transform: translateY(-10px);
+}
+.comics-color-box img{
+	position:fixed;
+	top: 150px;
+	right: 100px;
+	width: 700px;
+	z-index: -1;
+}
+/*---------films------------*/
+.flex-center{
+	justify-content: flex-end;
+}
+.slider{
+	height: 100vh;
+	overflow: hidden;
+}
+.slide{
+	height: 100vh;
+}
+.carousel-item{
+	position: relative;
+}
+.text{
+	width: 30%;
+	max-width: 30%;
+	height: 100px;
+/*	background: red;*/
+	position: absolute;
+	z-index: 100;
+	top: 30%;
+	left: 35%;
+	text-align: center;
+	color: white;
+	line-height: 2;
+	
+}
+.text h1{
+	font-size: 100px;
+	font-weight: 700;
+}
+.text p{
+	font-size: 18px;
+}
+.text a{
+	color: black;
+	background: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	border: 1px solid white;
+	padding: 12px 45px;
+	transition: 0.5s;
+}
+.text a:hover{
+	background-color: red;
+	color: white;
+}
+
+.text-1{
+	padding-top: 10px;
+}
+.text-1 a{
+	color: black;
+	background: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	border: 1px solid white;
+	padding: 12px 45px;
+	transition: 0.5s;
+}
+.text a:hover{
+	background-color: red;
+	color: white;
+}
+
+
+.text-2{
+	padding-top: 400px;
+
+}
+.text-2 a{
+	color: black;
+	background: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	border: 1px solid white;
+	padding: 12px 45px;
+	transition: 0.5s;
+}
+.text-2 a:hover{
+	background-color: red;
+	color: white;
+}
+
+.text-3{
+	padding-top: 200px;
+}
+.text-3 a{
+	color: black;
+	background: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	border: 1px solid white;
+	padding: 12px 45px;
+	transition: 0.5s;
+}
+.text-3 a:hover{
+	background-color: red;
+	color: white;
+}
+
+
+@media only screen and (max-width: 700px){
+	nav ul{
+		width: 100%;
+		background: linear-gradient(red, black);
+		position: absolute;
+		top: 100px;
+		right: 0;
+		z-index: 2;
+	}
+	nav ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a{
+		color: #fff;
+	}
+	.menu-icon{
+		display: block;
+	}
+	#menuList{
+		display: block;
+		
+	}
+	.row{
+		flex-direction: column-reverse;
+		margin: 50px 0;
+	}
+	.col-2{
+		flex-basis: 100%;
+		margin-bottom: 50px;
+	}
+	.col-2 .avengers{
+		width: 77%;
+	}
+	.color-box{
+		transform: translateX(75px);
+	}
+	.col-1::after{
+		left: -20px;
+		height: 45%;
+	} 
+	.col-1 h2{
+		font-size: 30px;
+	}
+	.col-1 p{
+		font-size: 17px;
+	}
+	.col-1{
+	margin: 10px 0;
+}
+	.social-links{
+		padding-bottom: 5px;
+	}
+	.social-links img:hover{
+		transform: translateX(5px);
+		transition: 0.5s;
+	}
+	
+/*	------characters--------*/
+	
+	.character-row{
+		flex-direction: column-reverse;
+		margin: 150px 0;
+	}
+
+	.col-text::after{
+		left: -20px;
+		height: 45%;
+	} 
+	.col-text h2{
+		font-size: 30px;
+	}
+	.col-text p{
+		font-size: 17px;
+	}
+	.col-1{
+	margin: 10px 0;
+}
+/*	------comics--------*/
+	.comics-row{
+		flex-direction: column-reverse;
+		margin: 150px 0;
+	}
+
+	.comics-col-text::after{
+		left: -20px;
+		height: 45%;
+	} 
+	.comics-col-text h2{
+		font-size: 30px;
+		color: white;
+	}
+	.comics-col-text p{
+		font-size: 17px;
+	}
+	.comics-col-1{
+	margin: 10px 0;
+}
+/*---------------films--------------	*/
+	.slider{
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	top: 200px;
+}
+.slide{
+	height: 100vh;
+}
+.carousel-item{
+	position: relative;
+}
+.text{
+	width: 100%;
+	max-width: 10%;
+	height: 10px;
+/*	background: red;*/
+	position: absolute;
+	z-index: 100;
+	top: 30%;
+	left: 35%;
+	text-align: center;
+	color: white;
+	line-height: 2;
+	
+}
+/*
+.text h1{
+	font-size: 45px;
+	font-weight: 300;
+}
+*/
+/*
+.text p{
+	font-size: 8px;
+}
+*/
+.text a{
+	color: black;
+	background: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10px;
+	border: 1px solid white;
+	padding: 5px 10px;
+	transition: 0.5s;
+}
+.text a:hover{
+	background-color: red;
+	color: white;
+}
+
+.text-1{
+	padding-top: 10px;
+}
+	.text-1 h1{
+		font-size: 40px;
+		line-height: 15px;
+	}
+	.text-1 p{
+		font-size: 8px;
+		line-height: 8px;
+	}
+
+.text-2{
+	padding-top: 60px;
+}
+.text-2 a{
+	color: black;
+	background: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10px;
+	border: 1px solid white;
+	padding: 5px 10px;
+	transition: 0.5s;
+}
+.text-2 a:hover{
+	background-color: red;
+	color: white;
+}
+
+.text-3{
+	padding-top: 5px;
+}
+.text-3 a{
+	color: black;
+	background: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 5px;
+	border: 1px solid white;
+	padding: 1px 5px;
+	transition: 0.5s;
+}
+.text-3 a:hover{
+	background-color: red;
+	color: white;
+}
+	.text-3 h1{
+		font-size: 20px;
+		line-height: 15px;
+	}
+	.text-3 p{
+		font-size: 8px;
+		line-height: 8px;
+	}
+	nav ul{
+		width: 100%;
+		background: linear-gradient(red, black);
+		position: absolute;
+		top: 100px;
+		right: 0;
+		z-index: 2;
+	}
+	nav ul li{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	nav ul li a{
+		color: #fff;
+	}
+	.menu-icon{
+		display: block;
+	}
+	#menuList{
+		display: block;
+		
+}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
